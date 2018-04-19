@@ -3,16 +3,22 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { FibonacciPipe } from './fibonacci.pipe';
+import { MemoizePipe } from './memoize.pipe';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FibonacciPipe,
+    MemoizePipe
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    FibonacciPipe
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

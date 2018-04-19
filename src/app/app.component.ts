@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Pipe } from '@angular/core';
+import { FibonacciPipe } from './fibonacci.pipe';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  public pipe: Pipe = FibonacciPipe;
   title = 'app';
 }
